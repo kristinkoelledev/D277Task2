@@ -1,0 +1,126 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+header,
+section {
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+}
+
+header {
+    height: 200px;
+    top: 0;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.imageCredit {
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+/*#region Containers*/
+
+.twoColumnContainer,
+.fourColumnContainer {
+    min-height: 150px;
+    display: grid;
+    gap: 10px;
+    padding: 15px;
+}
+
+.twoColumnContainer {
+    grid-template-columns: 50% 50%;
+    background-color: orchid;
+}
+
+.fourColumnContainer {
+    grid-template-columns: auto auto auto auto;
+    background-color: goldenrod;
+}
+
+.textItem,
+.imageItem,
+.textItem,
+.asideItem {
+    min-height: 100px;
+    width: 100%;
+}
+
+.textItem {
+    background-color: aqua;
+}
+
+.imageItem {
+    background-color: firebrick;
+}
+
+.imageItem>img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.textItem {
+    background-color: turquoise;
+}
+
+.asideItem {
+    background-color: orangered;
+}
+
+
+/*#endregion*/
+
+
+/*#region Navigation */
+
+.sidenav {
+    background-color: #111;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    width: 160px;
+    z-index: 1;
+}
+
+.sidenav a:hover,
+.sidenav a:active {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.mainNav,
+.subNav {
+    color: #818181;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.mainNav {
+    padding: 6px 8px 6px 16px;
+}
+
+.subNav {
+    padding: 6px 8px 6px 30px;
+}
+
+
+/*#endregion*/
